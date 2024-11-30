@@ -42,6 +42,7 @@ function App() {
         <h1 className="text-3xl font-bold">Podcast Shows</h1>
         <Link to="/favorites" className="text-blue-500 hover:underline">Favorites</Link>
       </div>
+      <SearchBar onSearch={handleSearch} />
       <GenreFilter onFilterChange={handleFilterChange} />
       <ul>
         {filteredShows.map((show) => (
@@ -66,5 +67,3 @@ const loadMore = () => {
 };
 
 export default App;
-
-
